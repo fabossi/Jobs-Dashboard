@@ -1,0 +1,72 @@
+@import "../../sass/main.component.scss";
+
+:host {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 10%;
+  width: 92%;
+  border-top-right-radius: 3rem;
+  border-top-left-radius: 3rem;
+  background-color: #faf6f3;
+  position: relative;
+  top: 2.1%;
+}
+
+.container-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: $color-black;
+  cursor: pointer;
+  &__home {
+    font-weight: 560;
+    font-size: 1.5rem;
+  }
+  &__ball {
+    position: absolute;
+    font-size: 3rem;
+    font-weight: 800;
+    top: 2.5rem;
+  }
+}
+
+.mail {
+  cursor: pointer;
+  height: 2.3rem;
+}
+.calendar {
+  cursor: pointer;
+  height: 2.4rem;
+}
+.dashboard {
+  cursor: pointer;
+  height: 2.3rem;
+}
+
+.filter {
+  cursor: pointer;
+  border-radius: 1.6rem;
+  border: none;
+  background-color: #ffd32b;
+  width: 13%;
+  height: 3rem;
+  padding: 1.94rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  & > * {
+    margin: 0 0.5rem;
+  }
+  &__img {
+    height: 2rem;
+  }
+  &__title {
+    color: $color-black;
+    font-weight: 300;
+    font-size: 1.15rem;
+  }
+}

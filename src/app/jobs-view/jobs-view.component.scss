@@ -1,0 +1,13 @@
+@import "../../sass/main.component.scss";
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-white;
+  width: 92%;
+  height: 30%;
+  border-radius: 2rem;
+  background-color: #69c9d6;
+  font-size: 1.6rem;
+}
