@@ -9,7 +9,7 @@
   height: 13%;
 }
 
-// somethin that i forget
+// something that i forget
 
 .lateral-menu {
   display: flex;
@@ -52,7 +52,6 @@
 
   &__lupa {
     height: 2rem;
-
   }
   &__countries {
     font-weight: 700;
@@ -66,9 +65,9 @@
       margin: 0 1rem;
     }
     &__dash {
-      height: 0.2rem;
+      // height: 0.2rem;
       width: 2rem;
-      border: 0.1rem solid $color-grey-light;
+      border: 0.05rem solid $color-grey-light;
       transform: rotate(-90deg);
     }
   }

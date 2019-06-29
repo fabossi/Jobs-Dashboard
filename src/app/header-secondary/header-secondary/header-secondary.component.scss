@@ -2,10 +2,110 @@
 
 :host {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-direction: column;
   height: 100%;
+  justify-content: space-around;
   align-items: center;
   background-color: #faf6f3;
-  border-top-right-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+}
+
+.header-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  &__ring-box {
+    background-color: #ffd22c;
+    border: none;
+    border-radius: 1rem;
+    height: 2.6rem;
+    width: 2.6rem;
+    &__point {
+      position: relative;
+      left: 2rem;
+      height: 0.7rem;
+      width: 0.7rem;
+      clip-path: circle(50% at 50% 50%);
+      background-color: pink;
+      border: 0.1rem solid $color-white;
+      border-radius: 50%;
+    }
+  }
+  &__profile-name {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: $color-black;
+  }
+}
+
+.view-more {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  &__content-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &__h1 {
+      color: $color-black;
+    }
+    &__dots {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 10%;
+      border-radius: 50%;
+      cursor: pointer;
+      & > * {
+        background-color: $color-black;
+        clip-path: circle(50% at 50% 50%);
+        height: 0.5rem;
+        width: 0.5rem;
+        opacity: 0.8;
+      }
+    }
+  }
+  &__listr {
+    border: 0.05rem solid $color-grey-light;
+    width: 85%;
+    position: relative;
+    left: 6rem;
+    top: 3%;
+  }
+  &__description {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    top: 7%;
+    margin: 2rem 0;
+    &__titles {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      color: $color-black;
+      &__title {
+        font-size: 1.3rem;
+        font-weight: 900;
+      }
+      &__sub-title {
+        font-size: 1.1rem !important;
+        color: $color-grey !important;
+      }
+    }
+    &__plus {
+      height: 1.8rem;
+    }
+    &__img {
+      height: 6rem;
+      width: 6rem;
+      border-radius: 1.3rem;
+      background-color: $color-white;
+    }
+  }
 }
